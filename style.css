@@ -1,0 +1,129 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00308F;
+}
+
+li block {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li block:hover {
+  background-color: #111;
+}
+
+.UniPic {
+  position: relative;
+  width: 50%;
+  margin: 20px auto; /* Center the image horizontally */
+}
+
+.UniPic img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  transition: .5s ease;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.UniPic:hover .overlay {
+  opacity: 1;
+}
+
+.aboutMe {
+  text-align: center; 
+  margin-top: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutMe .icon {
+  width: 100px; 
+  height: auto; 
+  margin-right: 20px; 
+}
+
+.aboutMe .jobtitle {
+  margin-top: 20px;
+}
+
+.projects {
+  text-align: center;
+}
+
+.aiProj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.aiProj .aiimage {
+  width: 20%; 
+  height: auto; 
+  margin-right: 20px; 
+}
+
+.aiProj p {
+  max-width: 15%; 
+}
+
+
+.cyberProj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.cyberProj .cyberimage {
+  width: 20%; 
+  height: auto; 
+  margin-right: 20px; 
+}
+
+.cyberProj p {
+  max-width: 15%; 
+}
+
+.imageGallery {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.imageList {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  padding: 20px;
+}
+
+.imageList img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
